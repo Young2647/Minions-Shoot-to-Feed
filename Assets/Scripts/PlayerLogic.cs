@@ -61,6 +61,8 @@ public class PlayerLogic : MonoBehaviour
         RotateTowardsMousePosition();
         if(Input.GetButtonDown("Fire2"))
             Restart();
+        if(Input.GetKeyDown(KeyCode.Escape)||Input.GetKeyDown(KeyCode.Home))
+            Application.Quit();
     }
     void RotateTowardsMousePosition()
     {
